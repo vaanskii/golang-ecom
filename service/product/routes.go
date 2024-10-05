@@ -27,5 +27,5 @@ func (h *Handler) handleCreateProduct(w http.ResponseWriter, r *http.Request) {
 		utils.WriteError(w, http.StatusInternalServerError, err)
 		return
 	}
-	utils.WriteJson(w, http.StatusOK, ps)
+	utils.WriteJSON(w, http.StatusOK, ps)
 }
